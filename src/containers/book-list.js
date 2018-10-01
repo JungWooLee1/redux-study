@@ -41,7 +41,6 @@ function mapStateToProps(state) {
 
 // 해당 함수로 반환반은 것은 booklist 컨테이너의 props로 연결된다.
 function mapDispatchToProps(dispatch) {
-
   // [ bindActionCreators ]
   // selectBook 은 실제 액션 생성자입니다.
   // selectBook 이 호출되면, 결과는 모든 리듀서에게 전달된다.
@@ -51,13 +50,11 @@ function mapDispatchToProps(dispatch) {
 
 // 컨테이너와 리덕스를 연결한다.
 // 컨테이너는 리덕스에 속한 스테이트를 다룰 수 있는 컴포넌트이다.
-
 // 컴포넌트에서 컨테이너 북 리스트를 바꿔야 하는데 - 이는 새로운 dispatch 메소드인 selectBook을 알아야 하며, 이는 prop로 이용이 가능하다.
 
 // Promote BookList from a componect to a container - it needs to know
 // about this new dispatch method, selectBook. Make it available
 // as a prop
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
 

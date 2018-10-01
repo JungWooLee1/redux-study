@@ -1,7 +1,6 @@
 // 책을 선택했을때의 Action입니다.
 // 모든 리듀서로 해당 액션이 전달되어야 합니다.
-
-
+// 액션의 이름과 데이터(payload를 전달합니다.)
 
 export function selectBook(book) {
   //console.log('A book has been selected:', book.title);

@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import BooksReducer from './reducer_books'
+import ActiveBook from './reducer_active_book'
 
 // 리듀서를 매핑하는 역활을 한다.
 // BooksReducer는 books 프로퍼티를 생성하는 권한을 갖는다.
@@ -8,7 +9,8 @@ import BooksReducer from './reducer_books'
 
 
 const rootReducer = combineReducers({
-  books: BooksReducer
+  books: BooksReducer,
+  activeBook: ActiveBook
 });
 
 export default rootReducer;
